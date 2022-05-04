@@ -17,4 +17,5 @@ public:
       }
    }
    return (count == 2 && s1[prev] == s2[curr] && s1[curr] == s2[prev]);
-   }};
+   }
+ };
