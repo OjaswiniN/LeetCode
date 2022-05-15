@@ -3,7 +3,6 @@ public:
     TreeNode* trimBST(TreeNode* root, int low, int high){
         if(!root)
             return NULL;
-        
         if(root->val < low) {
             return trimBST(root->right, low, high);
         } else if (root->val > high) {
