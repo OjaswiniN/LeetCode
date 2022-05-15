@@ -8,6 +8,5 @@ public:
         return searchBST(root->left, val);
         
     return searchBST(root->right, val);
-   }
-   
+   }  
 };
