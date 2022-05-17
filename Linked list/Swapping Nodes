@@ -18,6 +18,7 @@ public:
 };
 
 
+
 ## 2nd way 
 class Solution {
 public:
