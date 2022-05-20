@@ -5,16 +5,12 @@ bool findTriplets(int arr[], int n)
            int low=i+1,high=n-1;
            while(low<high){
                if(arr[low]+arr[high] < -arr[i])
-
-                          low++;
+               low++;
                else if(arr[low]+arr[high] > -arr[i]) 
-
-                           high--;
+               high--;
                else 
-
-                       return true;
+               return true;
            }
-
     }
     return false;
     }
