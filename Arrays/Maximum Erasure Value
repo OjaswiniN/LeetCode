@@ -15,8 +15,7 @@ public:
                     st.erase(nums[k]);
                     cc-=nums[k];
                 }
-                j=k;
-                
+                j=k;    
             }
             st.insert(nums[i]);
             cc+=nums[i];
