@@ -1,0 +1,30 @@
+class Solution {
+public:
+    int maximumUniqueSubarray(vector<int>& nums) {
+        set<int>st;
+        map<int,int>mp;
+        int ans=0,j=0,cc=0;
+        for(int i=0;i<nums.size();i++){
+            auto it = st.find(nums[i]);
+            if(it!=st.end()){
+  
+                ans=max(cc,ans);
+                int ind = mp[nums[i]];
+                int k;
+                for(k=j;k<=ind;k++){
+                    st.erase(nums[k]);
+                    cc-=nums[k];
+                }
+                j=k;
+                
+            }
+            st.insert(nums[i]);
+            cc+=nums[i];
+            mp[nums[i]]=i;
+            
+        }
+        ans=max(cc,ans);
+        return ans;
+        
+    }
+};
