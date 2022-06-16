@@ -16,6 +16,7 @@ public:
             }
             base = (base * 10) + (str[i++] - '0');
          }
+         
          return base * sign;  
     }
 };
