@@ -1,0 +1,53 @@
+class Solution {
+public:
+    string smallestStringWithSwaps(string s, vector<vector<int>>& pairs) {
+    list<int> adj[s.size()];
+    bool visited[s.size()];
+    for(int i = 0;i<s.size();i++){
+        visited[i]=false;
+    }
+    for(int i = 0;i<pairs.size();i++){
+        adj[pairs[i][0]].push_back(pairs[i][1]);
+        adj[pairs[i][1]].push_back(pairs[i][0]);
+    }
+    int f;
+    vector <int> vecx;
+    string ptr="";
+    map<int,char> mp;
+    for(int i = 0;i<s.size();i++){
+        vecx.clear();
+        ptr="";
+        if(visited[i]==false){
+            queue<int> q;
+            q.push(i);
+            visited[i]=true;
+            while(q.size()!=0){
+            f = q.front();
+            vecx.push_back(f);
+            ptr+= s[f];    
+            q.pop();
+            for(auto n : adj[f]){
+                if(visited[n]==false){
+                    q.push(n);
+                    visited[n] = true;
+                    
+                    }
+                    
+                }
+            }
+        }
+        sort(ptr.begin(),ptr.end());
+        sort(vecx.begin(),vecx.end());
+        for(int i = 0 ;i<vecx.size();i++){
+            mp[vecx[i]]=ptr[i];
+        }
+        
+    }
+    string ktr="";
+    for(auto m : mp){
+        ktr+= m.second;
+    }
+    return ktr;
+
+    }
+};
