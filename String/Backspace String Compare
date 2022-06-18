@@ -1,7 +1,7 @@
 class Solution {
 public:
-   string actualString(string str)
-    {
+   
+   string actualString(string str){
         int len = str.length();
         string ans = "";
         int i = len - 1, backspace = 0;
