@@ -1,8 +1,21 @@
 class Solution {
 public:
-    int fib(int n) {
-       if (n <= 1)
-        return n;
-    return fib(n-1) + fib(n-2); 
+    int output;
+        if (n < 2){
+            return n;
+        }        
+        else {
+            int arr[2];
+            arr[0] = 0, arr[1] = 1;
+            for (int i = 2; i<=n; ++i){
+                int val;
+                val = arr[0] + arr[1];
+                arr[0] = arr[1];
+                arr[1] = val;
+            output = arr[1];
+            }
+        }
+        return output;
+
     }
 };
