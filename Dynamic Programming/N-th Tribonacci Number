@@ -1,0 +1,15 @@
+class Solution {
+private:
+    int func(int n,int *dp){
+        if(dp[n] != -1) return dp[n];
+        return dp[n] = func(n-2,dp) + func(n-1,dp) + func(n-3,dp);
+    }
+public:
+    int tribonacci(int n) {
+        int dp[37+1];
+        memset(dp,-1,sizeof(dp));
+        dp[0] = 0;
+        dp[1] = dp[2] = 1;
+        return func(n,dp);
+    }
+};
