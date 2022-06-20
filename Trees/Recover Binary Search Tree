@@ -19,7 +19,6 @@ public:
 		if(firstMistake != nullptr && root->val < pre->val)
 			secondMistake = root;
 		pre = root;
-
 		inorder(root->right);
         
 	}
