@@ -14,8 +14,7 @@ public:
         }
         
         n=temp;
-    }
-    
+    } 
     return false;
     }
 };
