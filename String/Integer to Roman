@@ -1,0 +1,42 @@
+class Solution {
+public:
+    string intToRoman(int n) {
+      int num[] = {1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1000};
+
+    string sym[] = {"I", "IV", "V", "IX", "X", "XL", "L", "XC", "C", "CD", "D", "CM", "M"};
+
+    int q = 0;
+
+    string ans = "";
+
+    for (int i = 12; i >= 0;i--)
+
+    {
+
+        q = n / num[i];
+
+        while(q--)
+
+        {
+
+            ans += sym[i];
+
+        }
+
+        // cout << ans << endl;
+
+        if(q!=0)
+
+        {
+
+            n = n % num[i];
+
+        }
+
+    }
+
+    return ans;
+
+  
+  }
+};
