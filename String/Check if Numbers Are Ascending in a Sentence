@@ -1,0 +1,30 @@
+class Solution {
+public:
+    bool areNumbersAscending(string s) {
+      int min_value = 0;
+        int size = s.size();
+
+        for(int x = 0; x < size; ++x){
+
+            if(s[x] - '0' <= 9 && s[x] - '0' >= 0){
+
+                int number = s[x] - '0';
+
+                if(x < size - 1)
+                    if(s[x + 1] - '0' <= 9 && s[x + 1] - '0' >= 0){
+                        number = (s[x] - '0') * 10 + (s[x + 1] - '0');
+                        ++x;
+                    }
+
+                if(min_value < number){
+                    min_value = number;
+                }
+                else
+                    return false;
+            }
+
+        }
+
+        return true;      
+    }
+};
