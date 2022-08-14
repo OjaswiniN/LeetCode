@@ -8,7 +8,6 @@ public:
             if (i!=31) res <<= 1;
             mask <<= 1;
         }
-        return res;
-        
+        return res;    
     }
 };
