@@ -6,8 +6,6 @@ public:
            N = N&(N-1);
           count++;    
        }
-      return count;  
-
-        
+      return count;         
     }
 };
