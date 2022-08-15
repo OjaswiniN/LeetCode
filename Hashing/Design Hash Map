@@ -1,7 +1,7 @@
 class MyHashMap {
 public:
-    int data[1000001];
-    MyHashMap() {
+     int data[1000001];
+     MyHashMap() {
         fill(data, data + 1000000, -1);
     }
     void put(int key, int val) {
