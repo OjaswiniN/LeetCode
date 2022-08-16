@@ -1,6 +1,5 @@
 class Solution {
 public:
-   
    string actualString(string str){
         int len = str.length();
         string ans = "";
