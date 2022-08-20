@@ -2,7 +2,7 @@ class Solution {
     private: vector<int> inorder;
 public:
     vector<int> inorderTraversal(TreeNode* root) {
-       if(root==nullptr)
+       if(root==NULL)
             return inorder;
         inorderTraversal(root->left);
         inorder.push_back(root->val);
