@@ -12,7 +12,6 @@ public:
         ans[k / c][k % c] = num;
         ++k;
       }
-
     return ans;  
     
     }
