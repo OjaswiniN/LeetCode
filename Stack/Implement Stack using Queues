@@ -3,7 +3,6 @@ public:
     queue<int> q;
 
     int peek = -1;   //  maintaining the top element of stack 
-    mmm
     MyStack() {
        
     }
