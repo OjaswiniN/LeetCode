@@ -3,8 +3,7 @@ public:
     vector<pair<int,int > > vec;
        MinStack() {
         
-    }
-    
+    }   
     void push(int val) {
         if(vec.size()==0 || val<vec[vec.size()-1].second) {
             vec.push_back({val, val});
