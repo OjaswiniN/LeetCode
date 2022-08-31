@@ -9,8 +9,7 @@ public:
             } else {
                 ++l;
             }
-        }
-        
+        }      
         return A;
     }
  };
