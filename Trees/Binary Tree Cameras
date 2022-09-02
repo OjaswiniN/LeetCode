@@ -12,8 +12,7 @@
 class Solution {
 public:
     int c=0;
-    int minCameraCover(TreeNode* root) 
-    {
+    int minCameraCover(TreeNode* root){
         if(solve(root)==0)
             c++;
         return c;    
