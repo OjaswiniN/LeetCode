@@ -6,8 +6,7 @@ public:
         int ans=0;
         
         for(auto i:nums)
-            ans+=abs(mid-i);
-        
+            ans+=abs(mid-i);  
         return ans;  
         
     }
