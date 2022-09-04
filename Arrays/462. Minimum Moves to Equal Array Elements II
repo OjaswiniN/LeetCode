@@ -8,7 +8,6 @@ public:
         for(auto i:nums)
             ans+=abs(mid-i);
         
-        return ans;
-        
+        return ans;  
     }
 };
