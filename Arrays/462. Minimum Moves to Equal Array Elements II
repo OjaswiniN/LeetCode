@@ -4,10 +4,9 @@ public:
         sort(nums.begin(),nums.end());
         int mid=nums[nums.size()/2];
         int ans=0;
-        
-        for(auto i:nums)
+        for(auto i:nums){
             ans+=abs(mid-i);  
-        return ans;  
-        
+           }   
+        return ans;         
     }
 };
