@@ -9,5 +9,6 @@ public:
             ans+=abs(mid-i);
         
         return ans;  
+        
     }
 };
