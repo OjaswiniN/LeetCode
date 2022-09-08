@@ -8,7 +8,7 @@ public:
             i--;
             characters ++;
         }
+        
         return characters;
-    
     }
 };
