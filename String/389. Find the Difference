@@ -9,8 +9,7 @@ public:
       {
         return t[i];
       }
-    }
-        
+    }     
     return t[t.length()-1];
     }
 };
