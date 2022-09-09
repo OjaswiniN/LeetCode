@@ -10,7 +10,6 @@ public:
                 if(n <= mid)
                     ++count;
             }
-          
             if(count <= mid)
                 left = mid + 1;
             else
