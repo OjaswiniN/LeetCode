@@ -5,8 +5,7 @@ public:
        while(left <=  right){
             int mid = left + (right - left) / 2;
             count = 0;
-            for(int n : nums)
-            {
+            for(int n : nums){
                 if(n <= mid)
                     ++count;
             }
