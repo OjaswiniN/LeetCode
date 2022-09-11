@@ -15,8 +15,7 @@ public:
             }  
         }
     }
-    
-    int f(string prefix, string suffix) {
+      int f(string prefix, string suffix) {
         
             return mp[prefix+"#"+suffix]-1; 
     }
