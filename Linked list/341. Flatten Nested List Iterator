@@ -13,8 +13,6 @@ public:
             }
             else
             {
-                // vector<NestedInteger>ans;
-                // ans.push_back(A[i].getList());
                 solve(A[i].getList());
             }
         }
