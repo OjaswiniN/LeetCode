@@ -31,7 +31,6 @@ public:
             }
         }
         string ans=s.substr(b,Max);
-        return ans;
-         
+        return ans;   
     }
 };
