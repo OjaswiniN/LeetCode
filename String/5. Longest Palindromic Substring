@@ -1,5 +1,6 @@
 class Solution {
 public:
+
     string longestPalindrome(string s) {
        int n=s.size();
         vector<vector<bool>> dp(n,vector<bool>(n,0));
