@@ -5,7 +5,8 @@ public:
         for(int i=1 ; i<=n ; i++){
            if(i%2 == 0){
                ans[i] = ans[i/2];
-           } else {
+           } 
+           else {
                ans[i]=ans[i-1]+1;
             }   
            }    
