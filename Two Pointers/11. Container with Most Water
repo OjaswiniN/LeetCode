@@ -16,7 +16,6 @@ public:
                 right--;
             }
         }
-        return maxi;
-    
+        return maxi;  
     }
 };
