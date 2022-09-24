@@ -16,8 +16,7 @@ public:
     void pop(){
         vec.pop_back();
     }
-    
-    int top() {
+    int top(){
         return vec[vec.size()-1].first;
     }
     
