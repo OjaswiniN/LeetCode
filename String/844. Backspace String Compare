@@ -9,8 +9,7 @@ public:
                 backspace++;
             }
             else{
-                if(backspace == 0)
-                {
+                if(backspace == 0){
                     ans += str[i];
                 }
                 if(backspace > 0) backspace--;
