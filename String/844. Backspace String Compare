@@ -18,7 +18,7 @@ public:
         }
         return ans;
     }
-    bool backspaceCompare(string s, string t) {
+    bool backspaceCompare(string s, string t){
         s = actualString(s);        
         t = actualString(t);
         if(s == t) return true;
