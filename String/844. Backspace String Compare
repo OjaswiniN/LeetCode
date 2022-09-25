@@ -8,8 +8,7 @@ public:
             if(str[i] == '#'){
                 backspace++;
             }
-            else
-            {
+            else{
                 if(backspace == 0)
                 {
                     ans += str[i];
