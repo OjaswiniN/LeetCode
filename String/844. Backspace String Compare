@@ -4,8 +4,7 @@ public:
         int len = str.length();
         string ans = "";
         int i = len - 1, backspace = 0;
-        while(i >= 0)
-        {
+        while(i >= 0){
             if(str[i] == '#')
             {
                 backspace++;
