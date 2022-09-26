@@ -14,8 +14,7 @@ public:
             else if(sum < target) i++;
             else j--;
             
-        }
-        
+        }      
         return ans;  
     
     }
