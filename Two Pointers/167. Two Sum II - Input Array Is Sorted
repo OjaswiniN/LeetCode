@@ -2,9 +2,8 @@ class Solution {
 public:
     vector<int> twoSum(vector<int>& arr, int target) {
          int n = arr.size();
-        
-        vector<int> ans;
-        int i = 0, j = n-1;
+         vector<int> ans;
+         int i = 0, j = n-1;
         
         while(i < j){
             int sum = arr[i] + arr[j];
