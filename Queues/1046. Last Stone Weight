@@ -9,6 +9,6 @@ public:
       auto w2 = q.top(); q.pop();
       if (w1 - w2 > 0) q.push(w1 - w2);
      }
-  return q.empty() ? 0 : q.top();
-}
+    return q.empty() ? 0 : q.top();
+   }
 };
