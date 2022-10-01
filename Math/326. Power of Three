@@ -9,8 +9,7 @@ public:
                 return false;
             }
             n = n / 3;
-        }
-        
+        }  
         return true;
     }
 };
