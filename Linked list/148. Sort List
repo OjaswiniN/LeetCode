@@ -14,7 +14,8 @@ public:
         while(cur){
             cur->val = arr[i++];
             cur = cur->next;
-        }    
+        }   
+        
         return head;
     }
 };
