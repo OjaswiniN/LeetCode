@@ -4,7 +4,7 @@ public:
         if(!head) return head;
         vector<int> arr;
         ListNode* cur = head;
-        while(cur){
+        while(cur) {
             arr.push_back(cur->val);
             cur = cur->next;
         } 
