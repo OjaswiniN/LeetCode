@@ -2,8 +2,7 @@ class Solution {
 public:
     bool isHappy(int n){
     set<int> s;
-    while(s.count(n)==0)
-    {
+    while(s.count(n)==0){
         if(n==1) return true;
         s.insert(n);
         int temp=0;
