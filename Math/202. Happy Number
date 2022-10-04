@@ -9,8 +9,7 @@ public:
         while(n){
             temp+= (n%10)*(n%10);
             n/=10;
-        }
-        
+        }       
         n=temp;
     } 
     return false;
