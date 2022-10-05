@@ -13,6 +13,5 @@ public:
                 maxNumber = meanNumber - 1;
             }
         }
-    }
-    
+    }   
 };
