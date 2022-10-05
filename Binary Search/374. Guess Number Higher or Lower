@@ -7,7 +7,7 @@ public:
             int res = guess(meanNumber);
             if (res == 0) { 
                 return meanNumber;
-            } else if (res == 1) {
+            } else if (res == 1){
                 minNumber = meanNumber + 1;
             } else {
                 maxNumber = meanNumber - 1;
