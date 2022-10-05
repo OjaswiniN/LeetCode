@@ -4,7 +4,6 @@ public:
         int maxNumber = n, minNumber = 1;
         while (true){
             int meanNumber = (maxNumber - minNumber) / 2 + minNumber;
-            
             int res = guess(meanNumber);
             if (res == 0) { 
                 return meanNumber;
