@@ -9,7 +9,7 @@ public:
                 return meanNumber;
             } else if (res == 1){
                 minNumber = meanNumber + 1;
-            } else {
+            } else{
                 maxNumber = meanNumber - 1;
             }
         }
