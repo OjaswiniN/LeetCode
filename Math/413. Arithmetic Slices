@@ -1,6 +1,6 @@
 class Solution {
 public:
-    int numberOfArithmeticSlices(vector<int>& A) {
+    int numberOfArithmeticSlices(vector<int>& A){
         int count = 0, ans = 0, diff = INT_MAX;
         for (int i = 1; i < A.size(); i++) {
             int newDiff = A[i] - A[i-1];
