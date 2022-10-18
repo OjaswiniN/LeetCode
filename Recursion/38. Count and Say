@@ -1,7 +1,7 @@
 class Solution {
 public:
     string solve(int n){
-         if(n==1)return "1";
+        if(n==1)return "1";
         string p=solve(n-1);
         string ans="";
         int count=1;
