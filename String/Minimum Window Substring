@@ -34,7 +34,5 @@ public:
         return s.substr(start, ans);
     else
         return "";
-
- 
     }
 };
