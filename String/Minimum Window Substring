@@ -25,13 +25,11 @@ public:
                 m[s[i]]++;
                 if (m[s[i]] > 0)
                     count++;
- 
                 i++;
             }
         }
         j++;
     }
- 
     if (ans != INT_MAX)
         return s.substr(start, ans);
     else
