@@ -15,12 +15,12 @@ class Solution {
         }
       }
     }
-    int ans = 0;
-    for (int[] row: count) {
-      for (int v: row) {
-        ans = Math.max(ans, v);
+      int ans = 0;
+      for (int[] row: count) {
+       for (int v: row) {
+         ans = Math.max(ans, v);
       }
     }
-    return ans;
+      return ans;
     }
 }
