@@ -1,0 +1,25 @@
+class Solution {
+public:
+    
+    static bool comp(pair<int,int> a,pair<int,int> b)
+    {
+        if(a.second<=b.second)
+            return false;
+        else
+            return true;
+    }
+    
+    int earliestFullBloom(vector<int>& plantTime, vector<int>& growTime) {
+        vector<pair<int,int>> a;
+        for(int i=0;i<plantTime.size();i++)
+            a.push_back({plantTime[i],growTime[i]});
+        sort(a.begin(),a.end(),comp);
+        int ans=0,s=0;
+        for(auto t: a)
+        {
+            s+=t.first;
+            ans=max(ans,s+t.second);
+        }
+        return ans;
+    }
+};
