@@ -5,13 +5,13 @@ public:
         // Store the frequency of elements in the unordered map.
         unordered_map<int, int> freq;
         for (int i : arr) {
-            freq[num]++;
+            freq[i]++;
         }  
         
       // Store the frequency count of elements in the unordered set.
         unordered_set<int> freqSet;
         for (auto i : freq) {
-            freqSet.insert(value);
+            freqSet.insert(i.second);
         }
         return freqSet.size() == freq.size();
     }
