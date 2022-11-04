@@ -1,15 +1,15 @@
 class Solution {
 public:
     
-    // Return true if the character is a vowel (case-insensitive)
+    // Return true if the character is a vowel.
     bool isVowel(char c){
-    if (c=='a' || c=='A' || c=='e' || c=='E' || c=='i' || c=='I' || c=='o' || c=='O' || c=='u' ||  c=='U') {
-        return true; 
+       if (c=='a' || c=='A' || c=='e' || c=='E' || c=='i' || c=='I' || c=='o' || c=='O' || c=='u' ||  c=='U') {
+       return true; 
        }
         return false;
     }
     
-    // two pointer aprroach 
+    // Two pointer aprroach 
     string reverseVowels(string s) {
     int i = 0; 
     int j = s.length()-1;
@@ -17,7 +17,6 @@ public:
     {
         if (!isVowel(s[i])) {
             i++;
-   
             continue;
         }
         if (!isVowel(s[j]))
