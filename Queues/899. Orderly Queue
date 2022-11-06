@@ -11,7 +11,6 @@ public:
            result = min(result, S.substr(i) + S.substr(0, i));
             }
             return result;
-        }
-        
+        }  
     
 };
