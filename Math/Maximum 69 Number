@@ -1,0 +1,15 @@
+class Solution {
+public:
+    int maximum69Number (int num) {
+        string result = to_string(num);
+        for (char& s : result)
+            if(s=='6'){
+                s='9';
+                break;
+            
+        }  
+        
+        return stoi(result);
+                               
+    }
+};
