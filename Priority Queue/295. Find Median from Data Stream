@@ -1,5 +1,6 @@
 class MedianFinder {
-priority_queue<long> small, large;
+private :
+       priority_queue<long> small, large;
 public:
     void addNum(int num) {
         small.push(num);
