@@ -10,5 +10,5 @@ public:
             if (s[i] != ' ') res ++;
         }
         return res;
-        }
+     }
 };
