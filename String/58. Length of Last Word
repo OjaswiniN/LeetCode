@@ -1,13 +1,14 @@
 class Solution {
 public:
     int lengthOfLastWord(string s) {
-        int i = s.length() - 1;
-        int characters = 0;
-        while(i >= 0 && s[i] == ' ') i--;
-        while(i >= 0 && s[i] != ' '){
-            i--;
-            characters ++;
-        }     
-        return characters;
-    }
+        int res = 0;
+        // start traversing from the right most point to left most point
+        for (int i = s.size() - 1; i >= 0; --i) {
+        // if our result greater than zero and after this there is space we will return result ( will be our length of word) then return the result.
+            if (res > 0 && s[i] == ' ') return res;
+         // if there is no space, we will update result.
+            if (s[i] != ' ') res ++;
+        }
+        return res;
+        }
 };
