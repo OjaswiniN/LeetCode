@@ -1,5 +1,6 @@
 class Solution {
 public:
+
     int lengthOfLastWord(string s) {
         int res = 0;
         // start traversing from the right most point to left most point
