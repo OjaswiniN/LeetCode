@@ -1,17 +1,23 @@
 class Solution {
 public:
-    int guessNumber(int n){
-        int maxNumber = n, minNumber = 1;
-        while (true){
-            int meanNumber = (maxNumber - minNumber) / 2 + minNumber;
-            int res = guess(meanNumber);
-            if (res == 0) { 
-                return meanNumber;
-            } else if (res == 1){
-                minNumber = meanNumber + 1;
-            } else{
-                maxNumber = meanNumber - 1;
+    class Solution {
+public:
+    int guessNumber(int n) {
+         int low=1,high=n;
+         while(low<=high){
+            int mid=low+(high-low)/2;
+            int m=guess(mid);
+            if(m==0){
+                return mid;
+            }
+            else if(m==-1){
+                high=mid-1;
+            }
+            else{
+                low=mid+1;
             }
         }
-    }   
+        return -1;
+        
+    }
 };
