@@ -21,3 +21,5 @@ public:
         
     }
 };
+
+TC = log(n)   SC = 1
