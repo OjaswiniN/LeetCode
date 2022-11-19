@@ -9,14 +9,14 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+ 
 class Solution {
 public: 
      int count = 0;
      void helper(TreeNode* root){
  
         if(root)
-            count++;
-        
+            count++;       
         if(root->left)
         helper(root->left);
         if(root->right)
