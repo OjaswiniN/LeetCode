@@ -22,8 +22,7 @@ public:
         if(root->right)
         helper(root->right);
         
-    }
-    
+    }    
     int countNodes(TreeNode* root) {
         if(!root)
             return 0;
