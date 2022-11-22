@@ -1,1 +1,28 @@
-
+class Solution {
+public:
+    bool isSquare(int n) {
+    int sq = sqrt(n);
+    return sq * sq == n;
+  }
+    int numSquares(int n){
+    if (isSquare(n)) {
+        return 1;
+    }
+    // Legendre's three-square theorem
+    while (n % 4 == 0) {
+        n /= 4;
+    }
+    if (n % 8 == 7) {
+        return 4;
+    }
+    const int sq = sqrt(n);
+    for (int i = 1; i <= sq; i++) {
+        if (isSquare(n - i*i)) {
+            return 2;
+        }
+    }
+    return 3;
+}
+        
+    
+};
