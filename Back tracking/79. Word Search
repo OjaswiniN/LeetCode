@@ -19,6 +19,7 @@ public:
 
         return top || right || bottom || left;
     }
+    
     bool exist(vector<vector<char>>& board, string word) {
         int index = 0;
         int m = board.size();
