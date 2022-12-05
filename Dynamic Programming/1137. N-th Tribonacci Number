@@ -1,8 +1,7 @@
 class Solution {
 private:
-    int func(int n,int *dp){
-        if(dp[n] != -1) 
-        return dp[n];
+    int func(int n,int *dp) {
+        if(dp[n] != -1) return dp[n];
         return dp[n] = func(n-2,dp) + func(n-1,dp) + func(n-3,dp);
     }   
     
