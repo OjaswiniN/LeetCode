@@ -10,8 +10,9 @@
  * };
  */
  
- 
- void leaf(TreeNode *root, vector<int>& v){
+class Solution {
+public:
+    void leaf(TreeNode *root, vector<int>& v){
         
         if(root->right == NULL && root->left == NULL){
             
@@ -27,7 +28,7 @@
  
     }
     
- bool leafSimilar(TreeNode* root1, TreeNode* root2) {
+    bool leafSimilar(TreeNode* root1, TreeNode* root2) {
         
         vector<int> v1;
         leaf(root1, v1);
@@ -46,5 +47,8 @@ for(int i=0; i<v1.size(); i++){
             }
         }
         return true;
+
+        
+        
     }
 };
