@@ -15,17 +15,14 @@ public:
     void leaf(TreeNode *root, vector<int>& v){  
         if(root->right == NULL && root->left == NULL){
             v.push_back(root->val);
-        }
-        
+        }     
         if(root->right != NULL){
             leaf(root->right, v);
         }
         if(root->left != NULL){
             leaf(root->left, v);
-        }
- 
-    }
-    
+        } 
+    }    
     bool leafSimilar(TreeNode* root1, TreeNode* root2) {
         
         vector<int> v1;
