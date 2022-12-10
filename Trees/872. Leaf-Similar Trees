@@ -12,10 +12,8 @@
  
 class Solution {
 public:
-    void leaf(TreeNode *root, vector<int>& v){
-        
+    void leaf(TreeNode *root, vector<int>& v){  
         if(root->right == NULL && root->left == NULL){
-            
             v.push_back(root->val);
         }
         
