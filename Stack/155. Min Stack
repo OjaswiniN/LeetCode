@@ -1,17 +1,16 @@
 class MinStack {
 public:
     vector<pair<int,int >> vec;
-       MinStack(){
-        
+       MinStack() {    
     }   
-    void push(int val){
+    void push(int val) {
         if(vec.size()==0 || val<vec[vec.size()-1].second) {
             vec.push_back({val, val});
         } else {
             vec.push_back({val, vec[vec.size()-1].second});
         }
     }  
-    void pop(){
+    void pop() {
         vec.pop_back();
     }
     int top(){
