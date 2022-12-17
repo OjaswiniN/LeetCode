@@ -6,14 +6,15 @@ public:
     void push(int val) {
         if(vec.size()==0 || val<vec[vec.size()-1].second) {
             vec.push_back({val, val});
-        } else {
+        } 
+        else {
             vec.push_back({val, vec[vec.size()-1].second});
         }
     }  
     void pop() {
         vec.pop_back();
     }
-    int top(){
+    int top() {
         return vec[vec.size()-1].first;
     } 
     int getMin() {
