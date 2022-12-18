@@ -1,6 +1,12 @@
+//Tc = O(n)
+//Sc = O(n)
 
+################
 
-int n = temperatures.size();
+class Solution {
+public:
+    vector<int> dailyTemperatures(vector<int>& temperatures) {
+        int n = temperatures.size();
          vector<int>ans(n);
          stack<int>st;
          for(int i=0;i<n;i++)
@@ -14,3 +20,6 @@ int n = temperatures.size();
              st.push(i);
          }
          return ans;
+        
+    }
+};
