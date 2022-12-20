@@ -1,11 +1,11 @@
 class Solution {
 public:
-    string solve(int n){
+    string solve(int n) {
         if(n==1)return "1";
         string p=solve(n-1);
         string ans="";
         int count=1;
-        for(int i=1;i<p.size();i++){
+        for(int i=1;i<p.size();i++) {
             if(p[i]==p[i-1])count++;
             else{
                 ans+=to_string(count);
