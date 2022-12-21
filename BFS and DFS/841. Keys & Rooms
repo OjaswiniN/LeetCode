@@ -6,7 +6,7 @@ public:
         q.push(0);       
         while(!q.empty()) {
             int size = q.size();
-            for( int i = 0; i < size; i++ ) {
+            for(int i = 0; i < size; i++) {
                 int room = q.front(); q.pop();
                 visited[room] = true;
                 for( int ele: rooms[room])
