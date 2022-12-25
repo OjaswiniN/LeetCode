@@ -13,8 +13,7 @@ public:
                 for( int ele: rooms[room])
                     if (!visited[ele]) q.push(ele);
             }
-        }
-        
+        } 
         return count(visited.begin(), visited.end(), true) == rooms.size();
         
     }
