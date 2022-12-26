@@ -13,7 +13,7 @@ public:
                 arr[0] = arr[1];
                 arr[1] = val;
             output = arr[1];
-            }
+           }
         }
         return output;
     }
