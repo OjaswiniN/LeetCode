@@ -1,13 +1,13 @@
 class Solution {
 public:
     int output;
-        if (n < 2){
+        if (n < 2) {
             return n;
         }        
         else {
             int arr[2];
             arr[0] = 0, arr[1] = 1;
-            for (int i = 2; i<=n; ++i){
+            for (int i = 2; i<=n; ++i) {
                 int val;
                 val = arr[0] + arr[1];
                 arr[0] = arr[1];
