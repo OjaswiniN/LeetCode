@@ -1,20 +1,17 @@
 class Solution {
 public:
-       struct tmp{
+      struct tmp{
         bool operator()(const pair<int,int>& a, const pair<int,int>& b){
-            // <processing time, ID>
             if (a.first==b.first){
-                // smaller index first
                 return a.second>b.second;
             }
-            // smaller processing time first
             return a.first>b.first;
         }
     };
     static bool cp(const vector<int>& a, const vector<int>& b){
-        // smaller enqueue first
         return a[0]<b[0];
     }
+    
     vector<int> getOrder(vector<vector<int>>& tasks) {
         priority_queue<pair<int,int>, vector<pair<int,int>>, tmp> pq;
         
