@@ -19,8 +19,5 @@ public:
  	vector<vector<int>> permute(vector<int>& nums) {
  		dfs(0, nums.size(), nums);
  		return res;
-     }
-
-        
-    
+     }           
 };
