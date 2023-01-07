@@ -1,21 +1,21 @@
-int totalCost = 0;
-        int totalGas = 0;
-        int n = gas.size();
-        for(int i=0;i<n;i++){
-            totalCost += cost[i];
-            totalGas += gas[i];
-        }
-        if(totalCost > totalGas)
-            return -1;
+class Solution {
+public:
+    int canCompleteCircuit(vector<int>& gas, vector<int>& cost) {
+        int n=gas.size();
+        int total_gas=0,total_cost=0;
+        int curr_gas=0, start_point=0;
+        for(int i=0;i<n;i++)
+        {
+            total_gas+=gas[i];
+            total_cost+=cost[i];
+            curr_gas+=gas[i]-cost[i];
+            if(curr_gas<0)
+            {
 
-        int startIndex=0, curFuel = 0;
-
-        for(int i=0;i<n;i++){
-            if(curFuel < 0){
-                curFuel = 0;
-                startIndex = i;
+                start_point=i+1; 
+                curr_gas=0;
             }
-
-            curFuel += (gas[i]-cost[i]);
         }
-        return startIndex;
+        return (total_gas<total_cost) ? -1: start_point;     
+    }
+};
