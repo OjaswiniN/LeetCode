@@ -22,8 +22,7 @@ public:
                 ans = max(ans,mp[slope]);
             }
         }
-        return ans+1;
-      
+        return ans+1;  
         
     }
 };
