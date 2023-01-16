@@ -1,13 +1,13 @@
 class Solution {
     vector<vector<int>> res;
 public:
-     void dfs(int begin, int size, vector<int>& nums){
- 		if(begin >= size){
+     void dfs(int begin, int size, vector<int>& nums) {
+ 		if(begin >= size) {
  			res.push_back(nums);
  			return;
  		}
         else {
- 			for(int i = begin; i < size; ++i){
+ 			for(int i = begin; i < size; ++i) {
  				swap(nums[begin], nums[i]);
  				dfs(begin + 1, size, nums);
  				swap(nums[begin], nums[i]);
