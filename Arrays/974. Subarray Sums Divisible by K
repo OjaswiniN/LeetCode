@@ -1,1 +1,18 @@
-
+class Solution {
+public:
+    int subarraysDivByK(vector<int>& nums, int k) {
+        int sum=0;
+        int n = nums.size();
+        vector<int> pref(k, 0);
+        pref[0]++;
+        int cnt = 0;
+        int currSum = 0;
+        for(int i = 0; i<n; i++) {
+            currSum = (currSum + nums[i]%k + k)%k;
+            cnt += pref[currSum];
+            pref[currSum]++;
+        }
+        return cnt;
+        
+    }
+};
