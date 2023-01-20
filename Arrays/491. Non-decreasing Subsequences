@@ -1,6 +1,7 @@
-
- vector<vector<int>> findSubsequences(vector<int>& nums) {
-         vector<vector<int>> res;
+class Solution {
+public:
+    vector<vector<int>> findSubsequences(vector<int>& nums) {
+        vector<vector<int>> res;
          vector<int> element;
          dfs(res, element, nums,  0);
          return res;
@@ -17,3 +18,5 @@ private:
                 set.insert(nums[i]);
             }
         }
+    }
+};
