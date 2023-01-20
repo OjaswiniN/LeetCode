@@ -1,1 +1,19 @@
 
+ vector<vector<int>> findSubsequences(vector<int>& nums) {
+         vector<vector<int>> res;
+         vector<int> element;
+         dfs(res, element, nums,  0);
+         return res;
+    }
+private:
+    void dfs(vector<vector<int>>& res, vector<int>& element, vector<int>& nums, int pos){
+        if (element.size() > 1) res.push_back(element);
+        unordered_set<int> set; 
+        for(int i = pos; i < nums.size(); ++i){
+            if((element.empty() || element.back() <= nums[i]) && set.find(nums[i]) == set.end()){
+                element.push_back(nums[i]);
+                dfs(res, element, nums, i + 1);
+                element.pop_back();
+                set.insert(nums[i]);
+            }
+        }
