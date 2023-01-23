@@ -1,0 +1,16 @@
+class Solution {
+public:
+    int findJudge(int n, vector<vector<int>>& trust) {
+        vector<int> count(n + 1);
+        for (auto t : trust) {
+            count[t[0]]--;
+            count[t[1]]++;
+        }
+
+        for (int t = 1; t < count.size();t++) {
+            if (count[t] == n - 1) return t;
+        }
+        return -1;
+        
+    }
+};
