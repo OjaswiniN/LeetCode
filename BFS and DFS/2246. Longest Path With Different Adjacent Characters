@@ -2,7 +2,7 @@ class Solution {
 public:
     int ans=1;
     vector<vector<int>>adjlist;
-    int dfs(int node,int parent,string& s){
+    int dfs(int node,int parent,string& s) {
         int maxpath=1;
         for(auto x : adjlist[node]){
             if(x != parent){
