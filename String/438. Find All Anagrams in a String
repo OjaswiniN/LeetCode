@@ -35,8 +35,9 @@ public:
             s2[s[i]]++;  // adding s string to hash of size p
             
         }
-        if(p2 == s2) ans.push_back(0); // checking for index 0
-        int j=0; //slide 
+        if(p2 == s2) 
+        ans.push_back(0); 
+        int j=0;
         for(int i=p.size();i<s.size();i++){
             s2[s[i]]++; 
             s2[s[j]]--;
