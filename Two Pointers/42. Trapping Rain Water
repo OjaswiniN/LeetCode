@@ -1,0 +1,22 @@
+class Solution {
+public:
+    int trap(vector<int>& height) {
+        // two pointers 
+        int i = 0, j = height.size() - 1, ans = 0, maxi = 0, mini = 0;
+        while (i <= j) {
+            // take the minimum height 
+            mini = min(height[i], height[j]);
+            //find the maximum
+            maxi = max(maxi, mini);
+            // water units being tapped = diffence between max height and min height
+            ans += maxi - mini;
+            // move the pointer i if height[i]<height[j]
+            if (height[i] < height[j]) 
+            i++;
+            // else move pointer j
+            else j--;
+        }
+        return ans;
+        
+    }
+};
