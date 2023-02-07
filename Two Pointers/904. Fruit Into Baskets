@@ -13,10 +13,8 @@ public:
               mp.erase(fruits[j]);
               j++;
             } 
-            int c=0;
             maxi=max(maxi,i-j);
         }
-        return maxi;
-        
+        return maxi;   
     }
 };
