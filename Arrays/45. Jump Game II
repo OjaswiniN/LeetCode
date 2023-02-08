@@ -1,0 +1,20 @@
+class Solution {
+public:
+    int jump(vector<int>& nums) {
+        int n = nums.size();
+        if(n==1)return 0;
+        int max_so_far=0,ans=0,maxi=0;
+        int i=0;
+        while(maxi-i+1>0){
+           ans++;
+            for(i;i<=maxi;i++){
+                max_so_far = max(max_so_far,i+nums[i]);
+                if(max_so_far>=n-1)return ans;
+            }
+            maxi=max_so_far;
+        }
+        return 0;
+        
+        
+    }
+};
