@@ -21,9 +21,11 @@ public:
                         t2++;
                     }
                 }
+                
                 res += t1*t2;
             }
         }
+        
         return res*2;
         
     }
