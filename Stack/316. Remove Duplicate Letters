@@ -19,7 +19,8 @@ public:
             continue;
         }
         
-        while(st.size()>0 && st.top()>ch && freq[st.top()-'a']>0 ){
+        while(st.size()>0 && st.top()>ch && freq[st.top()-'a']>0 )
+        {
             char top= st.top();
             st.pop();
             exist[top-'a']= false;
@@ -27,7 +28,8 @@ public:
         st.push(ch);
         exist[ch-'a']= true;
     }
-    while(st.size()>0){
+       while(st.size()>0)
+       {
         res.push_back(st.top());
         st.pop();
     }
