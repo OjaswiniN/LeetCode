@@ -1,7 +1,7 @@
 class Solution {
 public:
     string removeDuplicateLetters(string s) {
-      vector<bool> exist(26,false);
+    vector<bool> exist(26,false);
     vector<int> freq(26,0);
     stack<char> st;
     string res;
