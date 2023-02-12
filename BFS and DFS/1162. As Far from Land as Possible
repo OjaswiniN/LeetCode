@@ -25,9 +25,7 @@ public:
                 q.push({new_r, new_c});
             }
         }
-    }
-    
-    return level == 1 ? -1 : (level - 1);
-        
-    }
+    } 
+    return level == 1 ? -1 : (level - 1);      
+  }
 };
