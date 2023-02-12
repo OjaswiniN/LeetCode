@@ -11,6 +11,7 @@ public:
             }
         }
     }
+    
     int level = 0;
     while (!q.empty()) {
         ++level;
@@ -25,6 +26,7 @@ public:
             }
         }
     }
+    
     return level == 1 ? -1 : (level - 1);
         
     }
