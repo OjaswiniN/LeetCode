@@ -6,8 +6,6 @@ public:
         for(int i =0;i<n;i++) {
             curr_xor ^= nums[i]; 
         }
-        return curr_xor;
-        
-        
+        return curr_xor;    
     }
 };
