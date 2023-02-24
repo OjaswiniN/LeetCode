@@ -3,13 +3,11 @@ public:
     int minimumDeviation(vector<int>& nums) {
         // store unique values 
         set<int> st;
-        for(int i=0;i<nums.size();i++){
-        
-            // if the element is odd, multiply by 2 and add to set
-            if(nums[i] % 2 != 0)
-                nums[i] *= 2;
-            st.insert(nums[i]);
+        // if the element is odd, multiply by 2 and add to set
+        for(auto i: nums){
+            st.insert(i % 2 ? i*2 : i);
         }
+    
         
         // initialize minimum deviation as the difference between max and min values in set
         int minDev = *st.rbegin() - *st.begin();
