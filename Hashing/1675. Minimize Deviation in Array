@@ -6,9 +6,7 @@ public:
         // if the element is odd, multiply by 2 and add to set
         for(auto i: nums){
             st.insert(i % 2 ? i*2 : i);
-        }
-    
-        
+        }     
         // initialize minimum deviation as the difference between max and min values in set
         int minDev = *st.rbegin() - *st.begin();
         
