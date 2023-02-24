@@ -1,7 +1,7 @@
 class Solution {
 public:
     int minimumDeviation(vector<int>& nums) {
-        // create a set to store unique values after processing
+        // Store unique values 
         set<int> st;
         // iterate over each element in the input vector
         for(int i=0;i<nums.size();i++){
