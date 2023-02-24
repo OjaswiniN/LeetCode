@@ -24,10 +24,11 @@ public:
             // divide by 2 and add back to the set
             temp /= 2;
             st.insert(temp);
+            
             // update minimum deviation with new value
-            mnDev = min(mnDev, *st.rbegin() - *st.begin());
+            minDev = min(minDev, *st.rbegin() - *st.begin());
         }   
-        // return the minimum deviation
-        return mnDev;
+      
+        return minDev;
     }
 };
