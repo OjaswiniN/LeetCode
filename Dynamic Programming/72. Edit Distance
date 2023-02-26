@@ -4,7 +4,6 @@ public:
         const int m = word1.length();
         const int n = word2.length();
         vector<vector<int>> dp(m + 1, vector<int>(n + 1));
-
         for (int i = 1; i <= m; ++i)
             dp[i][0] = i;
 
