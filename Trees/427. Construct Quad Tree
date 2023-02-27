@@ -62,8 +62,7 @@ private:
    bool allSame(const vector<vector<int>>& grid, int i, int j, int w) {
     return all_of(begin(grid) + i, begin(grid) + i + w,
                   [&](const vector<int>& row) {
-      return all_of(begin(row) + j, begin(row) + j + w,
-                    [&](int num) { return num == grid[i][j]; });
+      return all_of(begin(row) + j, begin(row) + j + w, [&](int num) { return num == grid[i][j]; });
     });
   }
 };
