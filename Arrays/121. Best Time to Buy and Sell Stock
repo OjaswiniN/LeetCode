@@ -7,8 +7,7 @@ public:
             if (prices[i] < prices[low]) {
                 low = i;
                 continue;
-            }
-            
+            }  
             max_profit= max(max_profit, prices[i] - prices[low]);
         }
         return max_profit;
