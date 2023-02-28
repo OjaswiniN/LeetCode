@@ -19,9 +19,9 @@ public:
   }
 
 private:
-   string encode(TreeNode* root, unordered_map<string, int>& count, vector<TreeNode*>& ans) {
-    if (root == nullptr)
-      return "";
+    string encode(TreeNode* root, unordered_map<string, int>& count, vector<TreeNode*>& ans) {
+           if (root == nullptr)
+           return "";
 
     const string encoded = to_string(root->val) + "#" +
                            encode(root->left, count, ans) + "#" +
