@@ -13,12 +13,12 @@ class Solution {
 public:
     vector<TreeNode*> findDuplicateSubtrees(TreeNode* root) {
         vector<TreeNode*> ans;
-    unordered_map<string, int> count;
-    encode(root, count, ans);
-    return ans;
+        unordered_map<string, int> count;
+        encode(root, count, ans);
+        return ans;
   }
 
- private:
+private:
    string encode(TreeNode* root, unordered_map<string, int>& count, vector<TreeNode*>& ans) {
     if (root == nullptr)
       return "";
