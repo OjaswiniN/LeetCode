@@ -4,9 +4,8 @@ public:
         int n = chars.size();
         if (n == 1) {
             return 1;
-        }
-        
-        int i = 0, j = 0;
+        } 
+        int i = 0, j = n-1;
         while (i < n) {
             int count = 1;
             while (i < n - 1 && chars[i] == chars[i + 1]) {
@@ -21,8 +20,7 @@ public:
                     chars[j++] = c;
                 }
             }
-        }
-        
+        } 
         return j;
         
     }
