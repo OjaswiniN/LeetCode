@@ -1,5 +1,7 @@
-
-int n = chars.size();
+class Solution {
+public:
+    int compress(vector<char>& chars) {
+        int n = chars.size();
         if (n == 1) {
             return 1;
         }
@@ -22,3 +24,6 @@ int n = chars.size();
         }
         
         return j;
+        
+    }
+};
