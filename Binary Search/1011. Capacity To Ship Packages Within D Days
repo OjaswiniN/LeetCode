@@ -25,7 +25,6 @@ public:
             left = max(left,weights[1]);
             right+= weights[i];
         }
-
         while(left<right){
             int mid = left+(right-left)/2;
             if(isvalid(weights,days,mid) == true) { 
