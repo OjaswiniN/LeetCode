@@ -9,11 +9,9 @@ public:
             if(count > mid){
                 tempdays++;
                 count = weights[i];
-            }
-            
+            }   
             if(tempdays > days) 
             return false;
-
         }
         if(tempdays > days ) 
         return false;
