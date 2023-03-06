@@ -18,7 +18,7 @@ public:
         
               return true;
     }
-    
+        
     int shipWithinDays(vector<int>& weights, int days) {
         int left=weights[0], right=weights[0];      
         for(int i=1;i<weights.size();i++) {
