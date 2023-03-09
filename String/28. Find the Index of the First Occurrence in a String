@@ -4,7 +4,7 @@ public:
         if (haystack == needle || !needle.length()) return 0;
         const int h = haystack.length();
         const int n = needle.length();
-        for(int i = 0; i <= h - n; i++){
+        for(int i = 0; i <= h - n; i++) {
             int j = 0;
             while(j < n && haystack[i+j] == needle[j]) 
                  j++;
