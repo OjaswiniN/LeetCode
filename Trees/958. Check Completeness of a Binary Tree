@@ -11,7 +11,7 @@ public:
         return 1 + countNodes(root->left) + countNodes(root->right);
     }
 
-    bool dfsHelper(TreeNode* root, int idx, int total){
+    bool dfsHelper(TreeNode* root, int idx, int total) {
         if(root==NULL) return true;
         if(idx > total) return false;
 
