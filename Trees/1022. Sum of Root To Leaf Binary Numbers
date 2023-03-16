@@ -26,7 +26,6 @@ public:
     }
     int sumRootToLeaf(TreeNode* root) {
         solve(root,0);
-        return sum;
-        
+        return sum;       
     }
 };
