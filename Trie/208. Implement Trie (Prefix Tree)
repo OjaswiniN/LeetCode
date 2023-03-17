@@ -4,7 +4,7 @@ public:
     TrieNode* children[26];
 
     TrieNode() {
-        isCompleteWord = false; // when the word is complete (mark that node as true)
+        isCompleteWord = false; 
         memset(children, 0, sizeof(children)); // for 26 possible Childrens (for next letter)
     }
 };
