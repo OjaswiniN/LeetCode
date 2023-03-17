@@ -5,7 +5,7 @@ public:
 
     TrieNode() {
         isCompleteWord = false; 
-        memset(children, 0, sizeof(children)); // for 26 possible Childrens (for next letter)
+        memset(children, 0, sizeof(children)); 
     }
 };
 
