@@ -1,4 +1,4 @@
-class TrieNode{
+class TrieNode {
 public:
     bool isCompleteWord;
     TrieNode* children[26];
@@ -15,8 +15,7 @@ public:
 
     Trie() {
         root = new TrieNode();
-    }
-    
+    }    
     void insert(string word) {
         TrieNode* node = root;
         for (char ch : word){
@@ -25,8 +24,7 @@ public:
             node = node->children[idx];
         }
         node->isCompleteWord = true;
-    }
-    
+    }  
     bool search(string word) {
         TrieNode* node = root;
         for(char ch : word){
@@ -36,7 +34,6 @@ public:
         }
         return node->isCompleteWord;
     }
-    
     bool startsWith(string prefix) {
         TrieNode* node = root;
         for(char ch : prefix){
