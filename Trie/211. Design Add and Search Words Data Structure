@@ -1,4 +1,6 @@
- class Trie{
+class WordDictionary {
+public:
+     class Trie{
         public:
         bool end;
         Trie *v[26];
@@ -42,3 +44,12 @@
     }
     bool search(string word) {
         return solve(node,word,0);
+    }
+};
+
+/**
+ * Your WordDictionary object will be instantiated and called as such:
+ * WordDictionary* obj = new WordDictionary();
+ * obj->addWord(word);
+ * bool param_2 = obj->search(word);
+ */
