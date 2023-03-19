@@ -1,12 +1,12 @@
 class WordDictionary {
 public:
-     class Trie{
+     class Trie {
         public:
         bool end;
         Trie *v[26];
         Trie(){
             end = false;
-            for(int i = 0; i < 26; i++){
+            for(int i = 0; i < 26; i++) {
                 v[i] = NULL;
             }
         }
@@ -17,7 +17,7 @@ public:
     
     void addWord(string word) {
         Trie *p = node;
-        for(auto &i: word){
+        for(auto &i: word) {
             if(p->v[i-'a']==NULL) {
                 p->v[i-'a'] = new Trie();
             }
@@ -25,18 +25,20 @@ public:
         }
         p->end = true;
     }
+    
     bool solve(Trie *node,string &str,int i) {
         if(i==str.length()) {
             return node->end;
         }
         bool ans = false;
-        if(str[i]=='.'){
+        if(str[i]=='.') {
             for(int j = 0; j < 26; j++) {
                 if(node->v[j])
                 ans |= solve(node->v[j],str,i+1);
                 if(ans)return true;
             }
-        }else{
+        }
+        else {
             if(node->v[str[i]-'a'])
             ans = solve(node->v[str[i]-'a'],str,i+1);
         }      
