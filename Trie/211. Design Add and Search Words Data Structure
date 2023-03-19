@@ -30,6 +30,7 @@ public:
         if(i==str.length()) {
             return node->end;
         }
+        
         bool ans = false;
         if(str[i]=='.') {
             for(int j = 0; j < 26; j++) {
