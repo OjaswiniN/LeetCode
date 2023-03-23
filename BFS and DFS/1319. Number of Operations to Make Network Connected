@@ -12,8 +12,9 @@ private:
 public:
     int makeConnected(int n, vector<vector<int>>& arr) {
         int len = arr.size();
-        if(len<n-1) return -1;
-         vector<int> adj[n];
+        if(len<n-1) 
+        return -1;
+        vector<int> adj[n];
         for(auto v : arr)
         {
             adj[v[0]].push_back(v[1]);
@@ -27,6 +28,7 @@ public:
             dfs(adj, visited, i);
             ans++;
         }
+        
         return ans - 1;
     }
 };
