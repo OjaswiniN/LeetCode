@@ -10,7 +10,6 @@ public:
         unordered_set<int> visited;
         queue<int> q;
         q.push(1);
-
         while (!q.empty()) {
             int node = q.front();
             q.pop();
@@ -23,7 +22,6 @@ public:
             }
         }
         
-        return res;
-        
+        return res;       
     }
 };
