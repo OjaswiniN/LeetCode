@@ -14,9 +14,7 @@ public:
     }
 
 private:
-    int dfs(const vector<unordered_set<int>>& g, int v, int p,
-            map<pair<int, int>, int>& directions, vector<bool>& visited){
-
+    int dfs(const vector<unordered_set<int>>& g, int v, int p, map<pair<int, int>, int>& directions, vector<bool>& visited) {
         visited[v] = true;
         int res = 0;
         if(p != -1) res += (directions[make_pair(v, p)] == p);
