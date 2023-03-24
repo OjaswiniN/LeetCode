@@ -20,8 +20,7 @@ public:
                 }
                 res = min(res, score);
             }
-        }
-        
+        }     
         return res;       
     }
 };
