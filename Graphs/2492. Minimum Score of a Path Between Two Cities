@@ -5,8 +5,7 @@ public:
         for (auto& road : roads) {
             int u = road[0], v = road[1], w = road[2];
             graph[u][v] = graph[v][u] = w;
-        }
-        
+        }  
         int res = numeric_limits<int>::max();
         unordered_set<int> visited;
         queue<int> q;
