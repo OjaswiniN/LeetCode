@@ -1,7 +1,7 @@
 class Solution {
 public:
     int longestCycle(vector<int>& edges) {
-        int longestCycleLength = -1;
+        int ans = -1;
         int timeStep = 1;
         vector<int> nodeVisitedAtTime(edges.size(), 0);
         for (int currentNode = 0; currentNode < edges.size(); ++currentNode) {
@@ -14,9 +14,9 @@ public:
                 u = edges[u];
             }
             if (u != -1 && nodeVisitedAtTime[u] >= startTime)
-                longestCycleLength = max(longestCycleLength, timeStep - nodeVisitedAtTime[u]);
+                ans = max(ans, timeStep - nodeVisitedAtTime[u]);
         }
 
-        return longestCycleLength;
+        return ans;
     }
 };
