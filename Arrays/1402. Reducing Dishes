@@ -11,7 +11,6 @@ public:
                 sum+=v[i];
             }
         }
-        return ans;
-        
+        return ans;   
     }
 };
