@@ -9,8 +9,7 @@ public:
             return mp[key];
         
         for(int i = 0; i < s1.size() - 1; i++) {
-            if(isScramble(s1.substr(0, i + 1), s2.substr(0, i + 1)) && isScramble(s1.substr(i + 1), s2.substr(i + 1)))
-            {
+            if(isScramble(s1.substr(0, i + 1), s2.substr(0, i + 1)) && isScramble(s1.substr(i + 1), s2.substr(i + 1))) {
                 return mp[key] = true;
             }
             
@@ -18,10 +17,7 @@ public:
             {
                 return mp[key] = true;
             } 
-        }
-        
-        return mp[key] = false;
-
-     
+        }     
+        return mp[key] = false; 
     }
 };
