@@ -9,9 +9,7 @@ public:
                 s.pop();
                 ++j;
             }
-        }
-		
+        }	
         return s.empty();
-    } 
-    
+    }     
 };
