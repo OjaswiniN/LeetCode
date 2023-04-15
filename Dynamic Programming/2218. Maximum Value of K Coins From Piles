@@ -3,7 +3,6 @@ public:
     int maxValueOfCoins(vector<vector<int>>& piles, int k) {
          int n = piles.size();
         vector<vector<int>> dp(n + 1, vector<int>(k + 1, 0));
-        
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= k; j++) {
                 int cur = 0;
