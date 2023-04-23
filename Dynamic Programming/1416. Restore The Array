@@ -10,20 +10,16 @@ public:
             return dp[idx];
 
         long sum = 0, ans = 0;
-        for (int i = idx; i < s.size(); i++)
-        {
+        for (int i = idx; i < s.size(); i++) {
             sum = (sum * 10 + (s[i] - '0'));
             if (sum >= 1 and sum <= k)
                 ans = (ans + help(i + 1, s, k)) % mod;
             else
                 break;
         }
-
         return dp[idx] = ans;
     }
-
-    int numberOfArrays(string s, int k)
-    {
+    int numberOfArrays(string s, int k) {
         memset(dp, -1, sizeof(dp));
         return help(0, s, k);
     
