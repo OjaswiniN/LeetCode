@@ -7,12 +7,10 @@ public:
     added.erase(begin(added));
     return min;
   }
-
   void addBack(int num) {
     if (num < curr)
       added.insert(num);
   }
-
  private:
   int curr = 1;
   set<int> added;
