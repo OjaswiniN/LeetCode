@@ -1,10 +1,5 @@
-
 class SmallestInfiniteSet {
 public:
-    SmallestInfiniteSet() {
-        
-    }
-    
   int popSmallest() {
     if (added.empty())
       return curr++;
