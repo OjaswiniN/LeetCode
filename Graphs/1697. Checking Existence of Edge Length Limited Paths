@@ -1,13 +1,12 @@
 class DisjointSet{
-    public:
+public:
     vector<int>size;
     vector<int>parent;
     DisjointSet(int n){
         size.resize(n,1);
         parent.resize(n);
         for(int i=0;i<n;i++)parent[i]=i;
-    }
-    
+    } 
     int findUpar(int node){
         if(node==parent[node])return node;
 
