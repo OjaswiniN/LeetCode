@@ -16,7 +16,6 @@ public:
             if (u != -1 && nodeVisitedAtTime[u] >= startTime)
                 ans = max(ans, timeStep - nodeVisitedAtTime[u]);
         }
-
         return ans;
     }
 };
