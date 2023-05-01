@@ -14,7 +14,6 @@ public:
       if(n>2)
           return ans;
       else 
-            return 0;
-        
+            return 0;   
     }
 };
