@@ -10,7 +10,6 @@ public:
             count++;
         }
         return count%2 ? -1 : 1;
-    
         
     }
 };
