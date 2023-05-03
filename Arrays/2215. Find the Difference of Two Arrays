@@ -12,24 +12,24 @@ public:
         {
             s2.insert(x);
         }
-        vector<int> temp;
-        vector<int> temp1;
-        for(auto x:st1)
+        vector<int> t;
+        vector<int> t1;
+        for(auto x:s1)
         {
-            if(st2.find(x)==st2.end())
+            if(s2.find(x)==s2.end())
             {
-                temp.push_back(x);
+                t.push_back(x);
             }
         }
         for(auto x:st2)
         {
-            if(st1.find(x)==st1.end())
+            if(s1.find(x)==s1.end())
             {
-                temp1.push_back(x);
+                t1.push_back(x);
             }
         }
-        ans.push_back(temp);
-        ans.push_back(temp1);
+        ans.push_back(t);
+        ans.push_back(t);
         return ans;
         
     }
