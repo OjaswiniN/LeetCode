@@ -9,7 +9,6 @@ public:
             if(nums[i] < 0)
             count++;
         }
-        return count%2 ? -1 : 1;
-        
+        return count%2 ? -1 : 1;     
     }
 };
