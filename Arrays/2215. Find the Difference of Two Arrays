@@ -14,8 +14,7 @@ public:
         }
         vector<int> t;
         vector<int> t1;
-        for(auto x:s1)
-        {
+        for(auto x:s1) {
             if(s2.find(x)==s2.end())
             {
                 t.push_back(x);
