@@ -2,15 +2,15 @@ class Solution {
 public:
     vector<vector<int>> findDifference(vector<int>& nums1, vector<int>& nums2) {
       vector<vector<int>> ans;
-        set<int> st1;
-        set<int> st2;
+        set<int> s1;
+        set<int> s2;
         for(auto x: nums1)
         {
-            st1.insert(x);
+            s1.insert(x);
         }
         for(auto x: nums2)
         {
-            st2.insert(x);
+            s2.insert(x);
         }
         vector<int> temp;
         vector<int> temp1;
