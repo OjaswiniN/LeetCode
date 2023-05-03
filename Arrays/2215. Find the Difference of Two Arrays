@@ -1,1 +1,36 @@
-
+class Solution {
+public:
+    vector<vector<int>> findDifference(vector<int>& nums1, vector<int>& nums2) {
+      vector<vector<int>> ans;
+        set<int> st1;
+        set<int> st2;
+        for(auto x: nums1)
+        {
+            st1.insert(x);
+        }
+        for(auto x: nums2)
+        {
+            st2.insert(x);
+        }
+        vector<int> temp;
+        vector<int> temp1;
+        for(auto x:st1)
+        {
+            if(st2.find(x)==st2.end())
+            {
+                temp.push_back(x);
+            }
+        }
+        for(auto x:st2)
+        {
+            if(st1.find(x)==st1.end())
+            {
+                temp1.push_back(x);
+            }
+        }
+        ans.push_back(temp);
+        ans.push_back(temp1);
+        return ans;
+        
+    }
+};
