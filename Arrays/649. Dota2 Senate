@@ -11,8 +11,7 @@ public:
                 ++score;
             } else {
                 if (score > 0) 
-                    senate.push_back('R');
-                
+                    senate.push_back('R');  
                 --score;
             }
         }
