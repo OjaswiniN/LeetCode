@@ -4,7 +4,6 @@ public:
         int leftrow = 0, rightrow = n-1, leftcol = 0, rightcol = n-1;
         int count = 1, total = n*n;
         vector<vector<int>> ans(n,vector<int>(n));
-
         while(count<=total)
         {
             for(int i=leftcol; i<=rightcol; i++)
