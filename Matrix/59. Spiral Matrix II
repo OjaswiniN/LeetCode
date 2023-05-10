@@ -1,1 +1,48 @@
+class Solution {
+public:
+    vector<vector<int>> generateMatrix(int n) {
+        int leftrow = 0,rightrow = n-1,leftcol = 0,rightcol = n-1;
+        int count = 1,total = n*n;
+        vector<vector<int>> ans(n,vector<int>(n));
 
+        while(count<=total)
+        {
+            for(int i=leftcol; i<=rightcol; i++)
+            {
+                ans[leftrow][i] = count;
+                count++;
+            }
+            leftrow++;
+
+            if(count > total)
+                break;
+            for(int i=leftrow; i<=rightrow; i++)
+            {
+                ans[i][rightcol] = count;
+                count++;
+            }
+            rightcol--;
+
+            if(count > total)
+                break;
+            for(int i=rightcol; i>=leftcol; i--)
+            {
+                ans[rightrow][i] = count;
+                count++;
+            }
+            rightrow--;
+
+            if(count > total)
+                break;
+            for(int i=rightrow; i>=leftrow; i--)
+            {
+                ans[i][leftcol] = count;
+                count++;
+            }
+            leftcol++;
+            if(count > total)
+                break;
+        }
+        return ans;
+    }
+};
