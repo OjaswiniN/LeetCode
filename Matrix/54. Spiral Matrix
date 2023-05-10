@@ -14,8 +14,7 @@ public:
             }
             curr = {curr[0] + dCurr[dir][0], curr[1] + dCurr[dir][1]};
         }
-        return result;
-        
+        return result;    
     }
 };
 
