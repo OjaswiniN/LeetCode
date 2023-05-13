@@ -9,14 +9,15 @@ public:
             if(i>=zero){
                 dp[i]=(dp[i]+dp[i-zero])%mod;
             }
-            if(i>=one){
+            if(i>=one) {
                 dp[i]=(dp[i]+dp[i-one])%mod;
             }
         }
         int sum=0;
-        for(int i=low;i<=high;i++){
+        for(int i=low;i<=high;i++) {
             sum=(sum+dp[i])%mod;
         }
+        
         return sum;
     }
 };
