@@ -4,7 +4,8 @@ public:
         vector<int> dp(high+1);
         dp[0]=1;
         int mod=1000000007;
-        for(int i=min(zero,one);i<=high;i++){
+        
+        for(int i=min(zero,one);i<=high;i++) {
             if(i>=zero){
                 dp[i]=(dp[i]+dp[i-zero])%mod;
             }
